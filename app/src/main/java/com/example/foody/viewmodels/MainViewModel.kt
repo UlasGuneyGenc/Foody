@@ -1,4 +1,4 @@
-package com.example.foody
+package com.example.foody.viewmodels
 
 import android.app.Application
 import android.content.Context
@@ -14,7 +14,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import java.lang.Exception
-import java.time.temporal.TemporalQueries
 import javax.inject.Inject
 
 @HiltViewModel

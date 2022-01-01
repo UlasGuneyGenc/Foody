@@ -69,4 +69,7 @@ dependencies {
 
     //dataBinding
     kapt "com.android.databinding:compiler:3.1.4"
+
+    //coil
+    implementation("io.coil-kt:coil:1.4.0")
 }
