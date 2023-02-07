@@ -1,4 +1,4 @@
-package com.example.foody
+package com.example.foody.viewmodels
 
 import android.app.Application
 import android.content.Context
@@ -7,6 +7,7 @@ import android.net.NetworkCapabilities
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.example.foody.MyApplication
 import com.example.foody.data.Repository
 import com.example.foody.models.FoodRecipe
 import com.example.foody.util.NetworkResult
@@ -63,7 +64,6 @@ class MainViewModel @Inject constructor(
         }
     }
 
-
     private fun hasInternetConnection(): Boolean {
         val connectivityManager = getApplication<Application>().getSystemService(
             Context.CONNECTIVITY_SERVICE
@@ -77,6 +77,4 @@ class MainViewModel @Inject constructor(
             else -> false
         }
     }
-
-
 }

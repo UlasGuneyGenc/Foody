@@ -113,4 +113,8 @@ dependencies {
 
     // Jsoup
     implementation 'org.jsoup:jsoup:1.13.1'
+
+    //androidx.fragment dependencies
+    implementation "androidx.fragment:fragment-ktx:1.5.5"
+
 }

@@ -1,11 +1,13 @@
 package com.example.foody.di
 
+import android.content.Context
 import com.example.foody.MyApplication
 import com.example.foody.util.Constants.Companion.BASE_URL
 import com.example.foody.data.network.FoodRecipesApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
@@ -21,8 +23,9 @@ object NetworkModule {
     @Singleton
     @Provides
     fun provideApplication(
+        @ApplicationContext context: Context
     ): MyApplication{
-        return MyApplication()
+        return context as MyApplication
     }
 
 
